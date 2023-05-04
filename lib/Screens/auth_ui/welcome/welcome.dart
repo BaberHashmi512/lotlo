@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lotlo/constants/assets_images.dart';
+import 'package:lotlo/constants/routes.dart';
+import 'package:lotlo/login/login.dart';
 import 'package:lotlo/widgets/primary_button/primary_button.dart';
 import 'package:lotlo/widgets/top_titles/top_titles.dart';
 
@@ -52,7 +54,9 @@ class Welcome extends StatelessWidget {
               ),
               PrimaryButton(
                 title: "Login",
-                onPressed: () {},
+                onPressed: () {
+                  Routes.instance.push(const Login(), context);
+                },
               ),
               SizedBox(
                   height: 18.0

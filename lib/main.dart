@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Lotlo',
       theme: themeData,
-      home: Welcome()
+      home: const Welcome()
     );
   }
 }
